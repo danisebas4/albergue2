@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 22px Simonson;
+    color: white;
+    background-color: white;
+}
+
+nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+/*header*/
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1;
+}
+
+header h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header nav .menu{
+    display: flex;
+}
+
+header nav .menu li {
+    margin: 0 15px;
+}
+
+
+@media (max-width: 700px) {
+   
+    nav {
+        overflow: visible;
+    }
+    .menu .lin{
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background:white;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu li a{
+        color:black;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        border-style: solid;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+/*@media*/
+
+.fondo {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.fondo .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: lightskyblue;
+    z-index: -1;
+}
+
+.fondo .background-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.45;
+}
+
+.fondo h1 {
+    font: bold 60px 'Open Sans', Sans-serif;
+    margin: 15px;
+}
+
+.fondo h3 {
+    font: normal 28px 'Open Sans', Sans-serif;
+    margin-bottom: 40px;
+    color: white;
+}
+
+a.boton{
+    color: white;
+    border-radius: 4px;
+    background-color: yellowgreen;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 105px;
+}
+
+
+/*Bandas*/
+hr {
+    width: 60%;
+    height: 10px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,cdcdcd+24,000000+50,cdcdcd+79,ffffff+100;Blue+Pipe+%231 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(205,205,205,1) 24%, rgba(0,0,0,1) 50%, rgba(205,205,205,1) 79%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 24%,rgba(0,0,0,1) 50%,rgba(205,205,205,1) 79%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(205,205,205,1) 24%,rgba(0,0,0,1) 50%,rgba(205,205,205,1) 79%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+    border: 0;
+}
+
+section h3 {
+    color: black;
+    text-transform: capitalize;
+    font: bold 32px 'Open Sans', Sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
+}
+section p {
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+@media (max-width: 700px) {
+    section.fondo h3 {
+        font: bold 15px 'Open Sans', Sans-serif;
+    }
+    section {
+        padding: 40px 20px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+ul.imagenes {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.rescates {
+    background-color: white;
+}
+.rescates .imagenes li {
+    padding: 20px;
+    background-clip: content-box;
+    height: 350px;
+    background-position: center;
+    background-color: white;
+    background-size: cover;
+}
+
+.rescates .imagenes li.small {
+    flex-basis: 30%;
+}
+.rescates .imagenes li.large {
+    flex-basis: 30%;
+}
+
+@media (max-width: 700px) {
+    .rescates .imagenes li.small, .rescates.imagenes li.large {
+        flex-basis: 100%;
+    }   
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: springgreen;
+    padding: 60px 0;
+}
+footer ul {
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+footer ul li{
+    margin: 0 20px;
+    font-size: 30px;
+}

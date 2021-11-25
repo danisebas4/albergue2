@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h2><img src="/imagenes/icono.png" alt="" width="80" height="80"></h2>
+        <nav>
+            <a class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="adopta.html">Adopta</a>
+                <a href="sobreN.html">Sobre Nosotros</a>
+                <a href="donar.html">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+   
+    <section>
+        <article class="form">
+            <form>
+                <div class="filas">
+                         <label>Usuario:</label>
+                         <input type="text" name="nombre" placeholder="Ingrese el nombre de su usuario">
+                </div>
+                <div class="filas">
+                 <label>Correo:</label>
+                       <input type="email" name="correo" placeholder="Ingrese su correo">           
+               </div>
+               <div class="filas">
+                 <label>Contraseña:</label>
+                       <input type="password" name="pass" placeholder="Ingrese su contraseña">       
+               </div>
+               <div class="filas">
+               </div>
+    
+               <div class="filas">
+                    <input type="submit" name="enviar" value="enviar formulario" class="boton">
+               </div>
+               <div class="filas">
+                 <input type="reset" name="resetar" value="reestablecer" class="boton">
+               </div>
+            </form>
+      
+    </article>
+    </section>
+    <footer>
+        Derechos reservados
+    </footer>
+</body>
+<script type="text/javascript">
+    $(".btn").on("click", function(){
+        $('.menu').toggleClass("show");
+    });
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+        <h2> <img src="/imagenes/icono.png" alt="" width="100" height="100"></h2>
+        <nav>
+            <a class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+               <li class="lin"> <a href="index.html">Inicio</a></li>
+               <li  class="lin"> <a href="adopta.html">Adopta</a></li>
+               <li  class="lin"><a href="sobreN.html">Sobre Nosotros</a></li>
+               <li  class="lin"> <a href="donar.html">Registrarse</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <section class="fondo">
+        <div class="background-image" style="background-image: url(imagenes/perrito.jpg);"></div>
+            <h1>Spat Patitas Suaves</h1>
+            <h3><p>"No vamos a cambiar el mundo ayudando a un animal, pero al menos el mundo habrá cambiado para él"</p> 
+                <p>¡Adopta, esteriliza y educa!</p></h3>
+                <a href="adopta.html" class="boton">Adopta</a>
+    </section>
+
+    <section class="rescates">
+        <h3>rescates</h3>
+        <ul class="imagenes">
+            <li class="small" style="background-image: url(imagenes/perrito4.jpg);"></li>
+            <li class="large" style="background-image: url(imagenes/perrito7.jpg);"></li>
+            <li class="large" style="background-image: url(imagenes/perrito\ 5.jpg);"></li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+          <ul><a href=""><i class="fab fa-facebook-square"></i></a></ul>
+          <ul><a href=""><i class="fab fa-youtube"></i></a></ul>
+          <ul><a href=""><i class="fab fa-facebook-square"></i></a></ul>
+          <ul><a href=""><i class="fab fa-twitter-square"></i></a></ul>
+          <p>derechos reservados<p>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    $(".btn").on("click", function(){
+        $('.menu').toggleClass("show");
+    });
+</script>
+</html>
